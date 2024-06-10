@@ -5,7 +5,7 @@ import InputField from "../../Component/InputField";
 import { Input } from "postcss";
 import FinalButton from "../../Component/FinalButton";
 
-const Step1 = () => {
+const Step1 = ({step,setStep}) => {
   const [usernameTaken, setUsernameTaken] = useState(false);
   const [userData, setUserData] = useState({
     username: "",
@@ -36,11 +36,12 @@ const Step1 = () => {
       return;
     }
     console.log(userData);
+    setStep(step+1);
   };
   return (
     <div className="p-5 lg:p-10 w-[580px] rounded-2xl bg-white flex flex-col gap-6">
       <h1 className="text-[20px] font-semibold text-center">Signup</h1>
-      <div className="flex gap-[15px]">
+      <div className="flex h-[27px] gap-[15px]">
         <div className="w-1/4 h-[3px] rounded-[10px] bg-primary-500 text-primary-600 lg:text-[16px] text-[10px]">
           Step 1 of 4
         </div>
@@ -115,7 +116,13 @@ const Step1 = () => {
             Privacy policy
           </a>
         </p>
-        <FinalButton onClick = {handleSubmit} text={"Sign up"}/>
+        <button
+          type="submit"
+          className="p-2 h-14 bg-primary-600 text-white rounded-md w-full"
+          onClick={handleSubmit}
+        >
+          Sign up
+        </button>
         <p className="text-[16px] text-gray-500 font-semibold">
           Already have an account?{" "}
           <a href="/login" className="text-primary-600">

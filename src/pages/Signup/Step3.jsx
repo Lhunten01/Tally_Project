@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import InputField from "../../Component/InputField";
 
-const Step3 = () => {
+const Step3 = ({step,setStep}) => {
 
     const [accountantData, setAccountantData] = useState({
         accountantName: "",
@@ -18,6 +18,7 @@ const Step3 = () => {
 
     const handleBack = () => {
         console.log("Back");
+        setStep(step-2);
     }
     const handleOnChange = (e) => {
         setAccountantData((prevData) => ({
@@ -72,13 +73,13 @@ const Step3 = () => {
 
         <button
           type="submit"
-          className="p-2 bg-primary-600 text-white rounded-md w-full"
+          className="p-2 h-14 bg-primary-600 text-white rounded-md w-full"
         >
           All Done
         </button>
       </form>
       <p
-        className="text-center text-[16px] text-gray-500 font-medium"
+        className="text-center text-[16px] cursor-pointer text-gray-500 font-medium"
         onClick={handleBack}
       >
         Back

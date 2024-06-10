@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./sign.css";
 import OtpInput from "react-otp-input";
+import FinalButton from "../../Component/FinalButton";
 
-const Step2 = () => {
+const Step2 = ({step,setStep}) => {
   const email = "alokverma73762@gmail.com";
   const phone = "+919876543210";
   const showEmail =
-    email.split("@")[0].slice(0, 3) + "********" + "@" + email.split("@")[1];
+    email.split("@")[0].slice(0, 3) + "******" + "@" + email.split("@")[1];
   const showPhone =
     phone.slice(0, 3) +
     "*********" +
@@ -35,6 +36,7 @@ const Step2 = () => {
 
   const handleBack = () => {
     console.log("Back");
+    setStep(step-1);
   };
   const verificationModeSelection = (e) => {
     setVerificationMode(e.target.value);
@@ -42,6 +44,7 @@ const Step2 = () => {
   const handleSubmit = () => {
     if (selected) {
       console.log("Verify");
+      setStep(step+1);
     } else {
       setTimeLeft(300);
       setSelected(true);
@@ -51,7 +54,7 @@ const Step2 = () => {
     setTimeLeft(300);
   }
   return (
-    <div className="p-10 max-w-[580px] rounded-2xl bg-white flex flex-col gap-6">
+    <div className="p-10 w-[580px] rounded-2xl bg-white flex flex-col gap-6">
       <h1 className="text-[20px] font-semibold text-center">Verification</h1>
       <div className="flex h-[27px] gap-[15px]">
         <div className="w-1/4 h-[3px] rounded-[10px] bg-gray-200"></div>
@@ -146,13 +149,13 @@ const Step2 = () => {
 
       <button
         type="submit"
-        className="p-2 bg-primary-600 text-white rounded-md w-full"
+        className="p-2 h-14 bg-primary-600 text-white rounded-md w-full"
         onClick={handleSubmit}
       >
         {selected ? "Verify" : "Continue"}
       </button>
       <p
-        className="text-center text-[16px] text-gray-500 font-medium"
+        className="text-center cursor-pointer text-[16px] text-gray-500 font-medium"
         onClick={handleBack}
       >
         Back
