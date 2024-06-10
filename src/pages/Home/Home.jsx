@@ -8,9 +8,12 @@ import CPASec from "./CPAsec";
 import FAQ from "./FAQ";
 import ContactSection from "./Contact";
 import Footer from "./Footer";
+import Navbar from './Navbar';
 const Home = () => {
   return (
-    <div>
+    <div className='mt-[100px]'>
+      
+        <Navbar/>
         <HeroSection/>
         <GetDemo/>
         <AboutSection/>

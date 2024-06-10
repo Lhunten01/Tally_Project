@@ -87,6 +87,7 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../images/cpa-logo.svg'
 
 const Navbar = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
@@ -98,13 +99,13 @@ const Navbar = () => {
   return (
     <nav className="main-menu navbar navbar-expand-lg navbar-light fixed-top">
       <div className="container">
-        <a className="navbar-brand" href="index.html">
-          <img src="img/cpa-logo.svg" alt="Expense Tracker" height="80" />
+        <a className="navbar-brand" href="/">
+          <img src={logo} alt="Expense Tracker" className='h-[60px]' />
         </a>
         <a
           href="https://cpa.expense-tracker.ca/cpa/signup"
           target="blank"
-          className="btn btn-secondary d-lg-none"
+          className="btn btn-secondary lg:hidden"
           title="CPA Portal"
         >
           CPA Portal
@@ -117,12 +118,12 @@ const Navbar = () => {
           aria-expanded={!isCollapsed}
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"> Hello</span>
         </button>
         <div className={`collapse navbar-collapse ${!isCollapsed ? 'show' : ''}`} id="navbarNav">
           <ul className="mx-auto navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link" href="#banner" title="Home">
+              <a className="nav-link text-black" href="#banner" title="Home">
                 Home
               </a>
             </li>
