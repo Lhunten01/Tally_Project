@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import WorkStep from '../../WorkStep'; 
-import './WorkSection.css';
-import img1 from './images/step-1-new.png'
-import img2 from './images/step-2-new.png'
-import img3 from './images/step-3.png'
-import img4 from './images/step-4.png'
-import img5 from './images/step-5-new.png'
-import img6 from './images/step-6.png'
+import WorkStep from './WorkStep'; 
+// import './WorkSection.css';
+import img1 from '../../images/step-1-new.png'
+import img2 from '../../images/step-2-new.png'
+import img3 from '../../images/step-3.png'
+import img4 from '../../images/step-4.png'
+import img5 from '../../images/step-5-new.png'
+import img6 from '../../images/step-6.png'
 const WorksSection = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });

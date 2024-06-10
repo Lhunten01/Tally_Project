@@ -1,5 +1,5 @@
 import React from 'react';
-import "../WorkSection.css";
+// import "../WorkSection.css";
 const WorkStep = ({ stepNumber, title, description, imgSrc, imgAlt, reverse }) => {
   return (
     <div className="web-block">

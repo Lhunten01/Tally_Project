@@ -2,9 +2,9 @@ import React from 'react';
 // import './Footer.css'; // Ensure you have the corresponding CSS
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import img1 from "./images/cpa-logo.svg";
-import img2 from "./images/cpa-android.png";
-import img3 from "./images/cpa-ios.png";
+import img1 from "../../images/cpa-logo.svg";
+import img2 from "../../images/cpa-android.png";
+import img3 from "../../images/cpa-ios.png";
 
 const Footer = () => {
   // Initialize AOS (Animate On Scroll)

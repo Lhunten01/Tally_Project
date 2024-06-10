@@ -1,6 +1,6 @@
 import React from 'react';
 // import './GetDemo.css'; // Make sure to import your CSS file
-import img1 from './images/conputer.png'; // Import your image
+import img1 from '../../images/conputer.png'; // Import your image
 import DemoForm from './DemoForm'; // Ensure you import your DemoForm component
 
 function GetDemo() {

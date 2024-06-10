@@ -1,10 +1,10 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "aos/dist/aos.css";
-import img1 from "./images/subscription-icon.svg"
-import img2 from "./images/data-icon.svg"
-import img3 from "./images/security-icon.svg"
-import img4 from "./images/crm-icon.svg"
+import img1 from "../../images/subscription-icon.svg"
+import img2 from "../../images/data-icon.svg"
+import img3 from "../../images/security-icon.svg"
+import img4 from "../../images/crm-icon.svg"
 
 const features = [
   {

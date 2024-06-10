@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "aos/dist/aos.css"; // Import AOS styles
 import AOS from "aos"; // Import AOS library
-import img1 from "./images/inbox_flatline.png"
+import img1 from "../../images/inbox_flatline.png"
 const ContactSection = () => {
   const [formData, setFormData] = useState({
     fradio: "true",
