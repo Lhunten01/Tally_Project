@@ -3,6 +3,7 @@ import toast from "react-hot-toast";
 import { FaCircleExclamation } from "react-icons/fa6";
 import InputField from "../../Component/InputField";
 import { Input } from "postcss";
+import FinalButton from "../../Component/FinalButton";
 
 const Step1 = () => {
   const [usernameTaken, setUsernameTaken] = useState(false);
@@ -114,12 +115,7 @@ const Step1 = () => {
             Privacy policy
           </a>
         </p>
-        <button
-          type="submit"
-          className="p-2 bg-primary-600 text-white rounded-md w-full"
-        >
-          Signup
-        </button>
+        <FinalButton onClick = {handleSubmit} text={"Sign up"}/>
         <p className="text-[16px] text-gray-500 font-semibold">
           Already have an account?{" "}
           <a href="/login" className="text-primary-600">
