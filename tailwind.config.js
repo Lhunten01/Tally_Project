@@ -19,6 +19,24 @@ module.exports = {
           '900': '#920a0a',
           '950': '#500000',
         },
+        'electric-violet': {
+          '50': '#ebefff',
+          '100': '#dbe1ff',
+          '200': '#bec7ff',
+          '300': '#97a1ff',
+          '400': '#6e6eff',
+          '500': '#594cff',
+          '600': '#5233ff',
+          '700': '#4120e2',
+          '800': '#351db6',
+          '900': '#2f208f',
+          '950': '#1d1353',
+      },
+    
+      },
+      fontFamily:{
+        poppins: ['Poppins', 'sans-serif'],
+        bell: ['Inter', 'sans-serif'],
       }
     },
   },
