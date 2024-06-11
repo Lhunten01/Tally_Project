@@ -1,4 +1,4 @@
-// import './Herosection.css';
+import './Herosection.css';
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import img1 from '../../images/hero_banner.png';
 import img2 from '../../images/btn-primary.png';

@@ -1,0 +1,225 @@
+.get-demo {
+    padding: 20px 30px;
+}
+
+.get-demo h2 {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 1.25;
+    text-align: center;
+    color: var(--title-color);
+    margin-bottom: 20px;
+}
+
+.get-demo p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: #52545A;
+    margin-bottom: 15px;
+}
+
+.get-demo p span {
+    font-weight: 500;
+}
+
+.get-demo p:last-child {
+    margin-bottom: 0;
+}
+
+.get-demo-block {
+    margin: 40px 0 80px;
+}
+
+.get-demo .form-wrapper {
+    background: rgba(247, 0, 0, 0.85);
+    border-radius: 30px;
+    padding: 24px 20px;
+}
+
+.get-demo form h4 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.get-demo .form-group {
+    margin-bottom: 15px;
+}
+
+.get-demo .form-group .form-control {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #52545A;
+    height: 50px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding: 15px 20px;
+}
+
+.get-demo .form-group .form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: var(--primary);
+}
+
+.get-demo form .btn {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    height: 60px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.5;
+    letter-spacing: -0.5px;
+    background: #FFFFFF;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    margin: 0 auto;
+    padding-top: 15px;
+    transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.get-demo form .btn:hover {
+    background: var(--primary);
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.get-demo .demo-error::placeholder {
+    color: red;
+}
+
+.date-field {
+    position: relative;
+}
+
+.date-field input {
+    padding-right: 30px !important;
+}
+
+.date-field .iconify {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    color: var(--primary);
+    font-size: 18px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.date-field span {
+    display: block;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--white);
+    margin-top: 10px;
+}
+
+
+/* Datepicker */
+
+.ui-datepicker {
+    padding: 5px;
+    border-radius: 10px;
+    border: 0 !important;
+    box-shadow: 0px 8px 42px #797979;
+}
+
+.ui-datepicker th span,
+.ui-datepicker td span,
+.ui-datepicker td a {
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
+    color: #333 !important;
+    outline: none;
+}
+
+.ui-widget-header {
+    font-weight: 500 !important;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 1rem !important;
+    border: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.ui-datepicker thead tr {
+    background-color: #fdd4e2 !important;
+    margin-top: 8px;
+}
+
+.ui-datepicker .ui-datepicker-calendar {
+    margin: 0;
+}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+    text-align: center;
+    border: 0 !important;
+    background: none !important;
+}
+
+.ui-state-highlight .ui-state-default {
+    border: 0 !important;
+    background: var(--primary) !important;
+    color: var(--white) !important;
+    border-radius: 6px;
+}
+
+
+/* Responsive Styles */
+
+@media (max-width: 991.98px) {
+    .get-demo h2 {
+        font-size: 50px;
+        line-height: 1.2;
+    }
+    .get-demo p {
+        font-size: 18px;
+    }
+    .get-demo .form-wrapper {
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .get-demo h2 {
+        font-size: 40px;
+        line-height: 1.1;
+    }
+    .get-demo p {
+        font-size: 16px;
+    }
+    .get-demo .form-wrapper {
+        padding: 15px 10px;
+    }
+    .get-demo form .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .get-demo h2 {
+        font-size: 30px;
+    }
+    .get-demo p {
+        font-size: 14px;
+    }
+    .get-demo .form-group .form-control {
+        font-size: 14px;
+    }
+    .get-demo form .btn {
+        font-size: 15px;
+        height: 50px;
+    }
+}
